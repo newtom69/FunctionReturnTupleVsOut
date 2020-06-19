@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace FunctionReturnTupleVsOut
+namespace Function
 {
     public class Program
     {
