@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30104.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FunctionReturnTupleVsOut", "FunctionReturnTupleVsOut.csproj", "{87FC0298-BFAC-4228-9D31-F1E980F79E25}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FunctionTest", "..\FunctionOutTest\FunctionTest.csproj", "{D19424B9-1EEC-4777-BB37-1C5C2C6C3EBC}"
+	ProjectSection(ProjectDependencies) = postProject
+		{87FC0298-BFAC-4228-9D31-F1E980F79E25} = {87FC0298-BFAC-4228-9D31-F1E980F79E25}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{87FC0298-BFAC-4228-9D31-F1E980F79E25}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87FC0298-BFAC-4228-9D31-F1E980F79E25}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87FC0298-BFAC-4228-9D31-F1E980F79E25}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87FC0298-BFAC-4228-9D31-F1E980F79E25}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D19424B9-1EEC-4777-BB37-1C5C2C6C3EBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D19424B9-1EEC-4777-BB37-1C5C2C6C3EBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D19424B9-1EEC-4777-BB37-1C5C2C6C3EBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D19424B9-1EEC-4777-BB37-1C5C2C6C3EBC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7BED2AF2-83DC-4538-91E3-F98277266E2D}
+	EndGlobalSection
+EndGlobal
