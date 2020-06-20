@@ -18,7 +18,7 @@ namespace Function
         /// <summary>
         /// Calcul de la somme, de la moyenne et de l'écart type d'une liste de nombres réels
         /// </summary>
-        /// <param name="dataSet">liste de noombre rééls</param>
+        /// <param name="dataSet">liste de nombre rééls</param>
         /// <param name="average">moyenne calculée retournée</param>
         /// <param name="standardDeviation">écart type calculée retournée</param>
         /// <returns>somme</returns>
@@ -26,14 +26,13 @@ namespace Function
         {
             double sum = 0;
             double sumSquares = 0;
-            int dataSetNumber = dataSet.Count;
             foreach (var value in dataSet)
             {
                 sum += value;
                 sumSquares += value * value;
             }
-            average = sum / dataSetNumber;
-            double variance = sumSquares / dataSetNumber - average * average;
+            average = sum / dataSet.Count;
+            double variance = sumSquares / dataSet.Count - average * average;
             standardDeviation = Math.Sqrt(variance);
             return sum;
         }
@@ -47,14 +46,13 @@ namespace Function
         {
             double sum = 0;
             double sumSquares = 0;
-            int dataSetNumber = dataSet.Count;
             foreach (var value in dataSet)
             {
                 sum += value;
                 sumSquares += value * value;
             }
-            double average = sum / dataSetNumber;
-            double variance = sumSquares / dataSetNumber - average * average;
+            double average = sum / dataSet.Count;
+            double variance = sumSquares / dataSet.Count - average * average;
             double standardDeviation = Math.Sqrt(variance);
             return (sum, average, standardDeviation);
         }
